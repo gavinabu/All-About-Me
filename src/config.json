@@ -1,0 +1,16 @@
+{
+  "projects":[
+    {
+      "name":"All About Me",
+      "description":"A website where you can see everything about me",
+      "projectType":"WEBSITE",
+      "link":"https://me.justwhatever.net"
+    },
+    {
+      "name":"JSocial",
+      "description":"A social media platform that does not track you",
+      "projectType":"WEBSITE",
+      "link":"https://jwn.social"
+    }
+  ]
+}

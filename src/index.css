@@ -1,13 +1,108 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Patrick+Hand&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+* {
+  font-family: sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+nav {
+  background-color: hsl(198, 86%, 61%);
+  box-shadow: 0 0 20px 20px hsl(198, 100%, 87%);
+  width: 25vw;
+  display: flex;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4px;
+  color: white;
+}
+nav img.pfp {
+  width: 60%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+nav h1 {
+  font-family: "Rubik";
+  text-align: center;
+}
+nav .subtitle {
+  gap: 2px;
+  color: hsl(0, 0%, 90%);
+  font-family: "Patrick Hand";
+  display: flex;
+}
+nav .subtitle img{
+  filter: invert() brightness(90%);
+  width: 16px;
+}
+nav .socials {
+  display: flex;
+  gap: 2px;
+  flex-wrap: wrap;
+}
+nav .socials button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 48px;
+  width: 48px;
+  transition-duration: 150ms;
+}
+nav .socials button:hover {
+  scale: 120%;
+}
+nav .socials button img {
+  /* filter: invert(); */
+}
+nav .links {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+nav .links button {
+  background: none;
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-family: "Nunito Sans";
+  font-size: 16px;
+  padding: 4px;
+  transition-duration: 150ms;
+}
+nav .links button:hover {
+  scale: 110%;
+  text-decoration: underline;
+}
+.App {
+  display: flex;
+}
+main {
+  position: fixed;
+  top: 0;
+  left: 25vw;
+  padding: 50px;
+}
+a {
+  color: rgb(57, 146, 201);
+}
+@keyframes slide {
+  from {
+    position: fixed;
+    top: -100vh;
+    scale: 0;
+  }
+  to {
+    position: fixed;
+    top: 50px;
+    scale: 100%;
+  }
+}
+main div[page="top"] {
+  animation: slide 300ms;
+}
+main div[page="switch"] {
+  animation: slide 300ms reverse infinite;
 }

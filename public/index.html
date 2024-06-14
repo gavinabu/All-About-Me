@@ -10,6 +10,13 @@
       name="description"
       content="I'm a very young and expirenced developer"
     />
+    <script defer>
+      function setDevMode(boolean) {
+        document.querySelectorAll("*").forEach(ele => {
+          ele.style.outline = boolean ? "1px solid red" : "none"
+        })
+      }
+    </script>
     <title>Gavin's Website</title>
   </head>
   <body>

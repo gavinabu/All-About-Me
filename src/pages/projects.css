@@ -18,3 +18,16 @@
   padding: 25px;
   border-radius: 25px;
 }
+.projects .project button {
+  height: 38px;
+  width: 64px;
+  border-radius: 19px;
+  border: none;
+  background-color: rgb(142, 208, 255);
+}
+.projects .project a {
+  text-decoration: none;
+  display: flex;
+  justify-content: end;
+  margin-top: 5px;
+}

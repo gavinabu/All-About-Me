@@ -41,12 +41,14 @@ nav .subtitle img{
 nav .socials {
   display: flex;
   gap: 2px;
+  cursor: URL("./cursor-fill.svg"),auto;
   flex-wrap: wrap;
 }
 nav .socials button {
   background: none;
   border: none;
   height: 48px;
+  cursor: URL("./cursor-fill.svg"),auto;
   width: 48px;
   transition-duration: 150ms;
 }
@@ -54,6 +56,7 @@ nav .socials button:hover {
   scale: 120%;
 }
 nav .socials button img {
+  cursor: URL("./cursor-fill.svg"),auto;
   /* filter: invert(); */
 }
 nav .links {

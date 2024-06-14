@@ -5,13 +5,15 @@
 .homePage h2,.homePage h3 {
   font-family: "Montserrat";
 }
+main {
+  overflow-y: scroll;
+}
 .homePage {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  overflow-y: scroll;
   justify-content: center;
-  height: calc(100vh - 82px);
+  height: calc(100vh);
 }
 .langs {
   display: flex;

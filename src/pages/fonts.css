@@ -1,0 +1,54 @@
+.fontsPage {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  height: calc(100vh - 82px);
+}
+.fontsPage .fonts {
+  display: flex;
+  gap: 2px;
+  flex-direction: column;
+}
+.fontsPage h2 {
+  font-size: 38px;
+  font-family: "Nunito Sans";
+}
+.fontsPage .fonts a {
+  text-decoration: none;
+  font-size: 28px;
+  color: #004e7e;
+  transition-duration: 150ms;
+}
+.fontsPage .fonts a:hover {
+  scale: 102%;
+  text-decoration: underline
+}
+.fontsPage a button {
+  background-color: #8eff7c;
+  border-radius: 32px;
+  border: 1px black solid;
+  display: flex;
+  height: 64px;
+  width: 250px;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+  transition-duration: 150ms;
+  text-decoration: none;
+}
+.fontsPage a {
+  text-decoration: none;
+}
+.fontsPage a button:hover {
+  background-color: #84f273;
+  scale: 97%;
+  cursor: pointer;
+}
+.fontsPage a button:active {
+  background-color: #7fe670;
+  scale: 99%;
+}
+.fontsPage a button img {
+  width: 32px;
+}

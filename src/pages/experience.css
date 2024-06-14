@@ -1,0 +1,23 @@
+.expPage p{
+  font-size: 14px;
+  font-family: "Comfortaa";
+}
+.expPage h2,.expPage h3 {
+  font-family: "Montserrat";
+}
+.expPage {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  overflow-y: scroll;
+  justify-content: center;
+  height: calc(100vh - 82px);
+}
+.langs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.langs img {
+  height: 64px;
+}

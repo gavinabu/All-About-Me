@@ -1,0 +1,22 @@
+.homePage p{
+  font-size: 14px;
+  font-family: "Comfortaa";
+}
+.homePage h2,.homePage h3 {
+  font-family: "Montserrat";
+}
+.homePage {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  overflow-y: scroll;
+  justify-content: center;
+  height: calc(100vh - 82px);
+}
+.langs {
+  display: flex;
+  gap: 4px;
+}
+.langs img {
+  height: 64px;
+}

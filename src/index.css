@@ -46,7 +46,6 @@ nav .socials {
 nav .socials button {
   background: none;
   border: none;
-  cursor: pointer;
   height: 48px;
   width: 48px;
   transition-duration: 150ms;
@@ -65,7 +64,6 @@ nav .links {
 nav .links button {
   background: none;
   color: white;
-  cursor: pointer;
   border: none;
   font-family: "Nunito Sans";
   font-size: 16px;
@@ -105,4 +103,13 @@ main div[page="top"] {
 }
 main div[page="switch"] {
   animation: slide 300ms reverse infinite;
+}
+* {
+  cursor: URL("./cursor.svg"),auto;
+}
+button,a {
+  cursor: URL("./cursor-fill.svg"),auto;
+}
+p,h1,h2,h3 {
+  cursor: URL("./cursor-text.svg"),auto;
 }
